@@ -62,7 +62,7 @@ Public Class Main
             Dim average As Double = sum / count
             appendTextToRtbOutput("Rata-rata nilai siswa" & Environment.NewLine & "     Jumlah siswa: " & count & Environment.NewLine & "     Total keseluruhan nilai: " & sum & Environment.NewLine & "     Rata-rata nilai: " & Math.Round(average, 2))
         Catch ex As Exception
-            If type = ".txt" Then
+            If type = "txt" Then
                 appendTextToRtbOutput("Pastikan disetiap baris mengikuti contoh berikut: NIS, NAMA, NILAI" & Environment.NewLine & "Silahkan periksa kembali file yang Anda masukkan :D")
             Else
                 appendTextToRtbOutput("Pastikan CSV tidak memiliki HEADER dan disetiap baris mengikuti susanan berikut: NIS | NAMA | NILAI" & Environment.NewLine & "Silahkan periksa kembali file yang Anda masukkan :D")
